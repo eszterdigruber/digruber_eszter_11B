@@ -51,7 +51,7 @@
                 }
             }
             for (int i = 0;i < DiakokTMB.Length; i++)
-            { Console.WriteLine($"{i + 1} Diákok magassága: {DiakokMagassagaTMB[i]} cm -> Átlaga: {DiakokTanulmanyaTMB[i]:0.00}"); }
+            { Console.WriteLine($"{i + 1} Diák magassága: {DiakokMagassagaTMB[i]} cm -> Átlaga: {DiakokTanulmanyaTMB[i]:0.00}"); }
         }
 
         private static void Feladat5()
@@ -66,7 +66,10 @@
                 {
                     MaxSorszama = i + 1;
                 }
-                MaxAtlag = i + 1;
+                if (MaxAtlag == DiakokTanulmanyaTMB[i])
+                {
+                    MaxAtlag = i + 1;
+                }
             }
             Console.WriteLine($"Magassága: {MaxMagassag} cm");
             Console.WriteLine($"Sorszáma: {MaxSorszama}");

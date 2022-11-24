@@ -37,16 +37,16 @@
         private static void Feladat8()
         {
             Console.WriteLine("\nFeladat 8: Rendezés");
-            int Csere;
-            for (int i = 0; i < DiakokTMB.Length; i++)
+            int CsereMagassag;
+            for (int i = 0; i < DiakokMagassagaTMB.Length; i++)
             {
-                for (int j = 0; j < DiakokTMB.Length - 1; j++)
+                for (int j = 0; j < DiakokMagassagaTMB.Length - 1; j++)
                 {
-                    if (DiakokTMB[j] > DiakokTMB[j + 1])
+                    if (DiakokMagassagaTMB[j] < DiakokMagassagaTMB[j + 1])
                     {
-                        Csere = DiakokTMB[j];
-                        DiakokTMB[j] = DiakokTMB[j + 1];
-                        DiakokTMB[j + 1] = Csere;
+                        CsereMagassag = DiakokMagassagaTMB[j];
+                        DiakokMagassagaTMB[j] = DiakokMagassagaTMB[j + 1];
+                        DiakokMagassagaTMB[j + 1] = CsereMagassag;
                     }
                 }
             }

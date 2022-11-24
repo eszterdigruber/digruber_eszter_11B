@@ -20,6 +20,18 @@
             Feladat4();
             Feladat5();
             Feladat8();
+            Feladat7();
+            Feladat9();
+        }
+
+        private static void Feladat9()
+        {
+            Console.WriteLine("\nFeladat 9: 7 méter a cél");
+        }
+
+        private static void Feladat7()
+        {
+            Console.WriteLine("\nFeladat 7: Volt-e átlag feletti magasság");
         }
 
         private static void Feladat8()
